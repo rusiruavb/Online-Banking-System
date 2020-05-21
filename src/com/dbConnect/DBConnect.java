@@ -5,9 +5,11 @@ import java.sql.DriverManager;
 
 public class DBConnect {
 	
+	//give your database connection url
 	private static String url = "jdbc:mysql://localhost:3306/online_banking";
 	private static String userName = "root";
-	private static String password = "RavB1998";
+	//give your database password here
+	private static String password = "";
 	private static Connection con;
 
 	public static Connection getConnection() {
