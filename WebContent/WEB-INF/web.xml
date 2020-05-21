@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>com.servlets.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>customer</servlet-name>
+		<servlet-class>com.servlets.CustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customer</servlet-name>
+		<url-pattern>/customerdetails</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>employee</servlet-name>
+		<servlet-class>com.servlets.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employee</servlet-name>
+		<url-pattern>/employee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>employeeInsert</servlet-name>
+		<servlet-class>com.servlets.EmployeeInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeInsert</servlet-name>
+		<url-pattern>/empinsert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>employeeUpdate</servlet-name>
+		<servlet-class>com.servlets.EmployeeUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeUpdate</servlet-name>
+		<url-pattern>/empupdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>employeeDelete</servlet-name>
+		<servlet-class>com.servlets.EmployeeDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeDelete</servlet-name>
+		<url-pattern>/empdelete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>customerinsert</servlet-name>
+		<servlet-class>com.servlets.CustomerInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerinsert</servlet-name>
+		<url-pattern>/cus</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>adminlogin</servlet-name>
+		<servlet-class>com.servlets.AdminLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminlogin</servlet-name>
+		<url-pattern>/adlog</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>customerlogin</servlet-name>
+		<servlet-class>com.servlets.CustomerLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerlogin</servlet-name>
+		<url-pattern>/cuslog</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>customerupdate</servlet-name>
+		<servlet-class>com.servlets.CustomerUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerupdate</servlet-name>
+		<url-pattern>/cusupdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>customerdelete</servlet-name>
+		<servlet-class>com.servlets.CustomerDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerdelete</servlet-name>
+		<url-pattern>/cusdelete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>customerlogout</servlet-name>
+		<servlet-class>com.servlets.CustomerLogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerlogout</servlet-name>
+		<url-pattern>/cusout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>adminlogout</servlet-name>
+		<servlet-class>com.servlets.AdminLogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminlogout</servlet-name>
+		<url-pattern>/adminout</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>insetcard</servlet-name>
+		<servlet-class>com.servlets.CardInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>insetcard</servlet-name>
+		<url-pattern>/cardinsert</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>moneytransfer</servlet-name>
+		<servlet-class>com.servlets.MoneyTransferServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>moneytransfer</servlet-name>
+		<url-pattern>/trans</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>viewallcustomers</servlet-name>
+		<servlet-class>com.servlets.CustomerUtilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewallcustomers</servlet-name>
+		<url-pattern>/allcus</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>viewalltransactions</servlet-name>
+		<servlet-class>com.servlets.AccountUtilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewalltransactions</servlet-name>
+		<url-pattern>/alltrans</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>sendmessage</servlet-name>
+		<servlet-class>com.servlets.SendMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sendmessage</servlet-name>
+		<url-pattern>/message</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>allmessage</servlet-name>
+		<servlet-class>com.servlets.MessageUtilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>allmessage</servlet-name>
+		<url-pattern>/allmessages</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>cardupdate</servlet-name>
+		<servlet-class>com.servlets.CardUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cardupdate</servlet-name>
+		<url-pattern>/cardupdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>carddelete</servlet-name>
+		<servlet-class>com.servlets.CardDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>carddelete</servlet-name>
+		<url-pattern>/carddelete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>makepayment</servlet-name>
+		<servlet-class>com.servlets.PaymentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>makepayment</servlet-name>
+		<url-pattern>/payment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletemessage</servlet-name>
+		<servlet-class>com.servlets.DeleteMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletemessage</servlet-name>
+		<url-pattern>/deletemessage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>loanrequest</servlet-name>
+		<servlet-class>com.servlets.LoanRequestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loanrequest</servlet-name>
+		<url-pattern>/loanreq</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>loanapprove</servlet-name>
+		<servlet-class>com.servlets.AdminLoanApproveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loanapprove</servlet-name>
+		<url-pattern>/loanapprove</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>allloans</servlet-name>
+		<servlet-class>com.servlets.LoanUtilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>allloans</servlet-name>
+		<url-pattern>/allloans</url-pattern>
+	</servlet-mapping>
+
+</web-app>
